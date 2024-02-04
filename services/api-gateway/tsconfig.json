@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "commonjs",
+        "rootDir": "./",
+        "baseUrl": "./",
+        "resolveJsonModule": true,
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "dist/",
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": false,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
+        "strictBindCallApply": false,
+        "noFallthroughCasesInSwitch": false,
+        "skipLibCheck": true,
+        "paths": {
+            "@orders/*": ["src/orders/*"],
+            "@products/*": ["src/products/*"],
+            "@users/*": ["src/users/*"]
+        }
+    },
+    "include": ["jest.config.ts", "__tests__/**/*", "src/**/*"]
+}
